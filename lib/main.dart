@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'utils.dart';
 
-void main() {
+void main() async{
+  await setUp();
   runApp(const MyApp());
+}
+
+Future<void> setUp() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await setUpFireBase();
 }
 
 class MyApp extends StatelessWidget {
