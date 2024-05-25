@@ -34,21 +34,36 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = null;
+    const serviceWorkerVersion = { flutter_service_worker_version };
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script>
-    window.addEventListener('load', function(ev) {
+    const firebaseConfig = {
+      apiKey: "AIzaSyCWrw9ZcnCCzDORrpRZDifLvF2gdTIiffQ",
+      authDomain: "we-chatapp-flutter.firebaseapp.com",
+      projectId: "we-chatapp-flutter",
+      storageBucket: "we-chatapp-flutter.appspot.com",
+      messagingSenderId: "183807772690",
+      appId: "1:183807772690:web:fbfe0d2c4b614c0863f0cb",
+      measurementId: "G-6YX1GFXB6D"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script>
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
+      _flutter.loader.load({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }

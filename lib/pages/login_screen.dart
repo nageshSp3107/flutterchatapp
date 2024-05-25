@@ -124,7 +124,11 @@ class _LoginScreenState extends State<LoginScreen> {
             if (hasLogged) {
               _navigationService.pushReplacementNamed("/home");
             } else {
-              print("Error");
+              ScaffoldMessenger.of(
+                      _navigationService.navigatorKey!.currentContext!)
+                  .showSnackBar(const SnackBar(
+                content: Text("Sending Message"),
+              ));
             }
           }
         },

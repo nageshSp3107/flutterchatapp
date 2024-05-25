@@ -1,1 +1,48 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"we-chatapp-flutter","appId":"1:183807772690:android:297b8168e19e3b4163f0cb","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"we-chatapp-flutter","appId":"1:183807772690:ios:e4f3c89055c13a6463f0cb","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"we-chatapp-flutter","appId":"1:183807772690:ios:e4f3c89055c13a6463f0cb","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"we-chatapp-flutter","configurations":{"android":"1:183807772690:android:297b8168e19e3b4163f0cb","ios":"1:183807772690:ios:e4f3c89055c13a6463f0cb","macos":"1:183807772690:ios:e4f3c89055c13a6463f0cb"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "we-chatapp-flutter",
+          "appId": "1:183807772690:android:297b8168e19e3b4163f0cb",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "we-chatapp-flutter",
+          "appId": "1:183807772690:ios:e4f3c89055c13a6463f0cb",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "we-chatapp-flutter",
+          "appId": "1:183807772690:ios:e4f3c89055c13a6463f0cb",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "web": {
+        "default": {
+          "projectId": "we-chatapp-flutter",
+          "appId": "1:183807772690:web:fbfe0d2c4b614c0863f0cb",
+          "uploadDebugSymbols": false,
+          "fileOutput": "web/index.html"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "we-chatapp-flutter",
+          "configurations": {
+            "android": "1:183807772690:android:297b8168e19e3b4163f0cb",
+            "ios": "1:183807772690:ios:e4f3c89055c13a6463f0cb",
+            "macos": "1:183807772690:ios:e4f3c89055c13a6463f0cb",
+            "web": "1:183807772690:web:fbfe0d2c4b614c0863f0cb"
+          }
+        }
+      }
+    }
+  }
+}
